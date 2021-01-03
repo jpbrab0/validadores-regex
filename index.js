@@ -3,7 +3,7 @@ var argv = require("minimist")(process.argv.slice(2));
 
 const choise = argv.validate;
 const numberOfChoice = argv.code;
-try{
+try {
   if (choise != null || numberOfChoice != null) {
     switch (choise) {
       case "cpf":
@@ -24,7 +24,7 @@ try{
   } else {
     console.log("Por favor coloque as flags corretamente.");
   }
-} catch (e){
+} catch (e) {
   console.log("\x1b[32m", "Ocorreu um erro na hora que validar o cep.")
 }
 
