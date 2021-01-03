@@ -11,6 +11,10 @@ Para instalar o projeto no seu pc rode:
 ```bash
 git clone https://github.com/jpbrab0/validadores-regex
 ```
+E por fim instale as dependencias do projeto com:
+```bash
+npm install
+```
 
 ## Rodando o projeto localmente
 
