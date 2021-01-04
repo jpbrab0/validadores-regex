@@ -18,7 +18,7 @@ try {
           : console.log("\x1b[32m", "O cep é invalido.");
         break;
       default:
-        console.log("\x1b[32m", "Por favor preencha os campos para validar um cep ou um cpf corretamente.");
+        console.log("\x1b[32m", "Por favor preencha as flags corretamente,  para validar um cep ou um cpf.");
         break;
     }
   } else {
