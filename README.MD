@@ -21,13 +21,13 @@ npm install
 Para rodar o projeto localmente use esse comando com as seguintes flags:
 
 ```bash
-node index.js --validade <cpf ou cep> --code <número do cep ou do cpf>
+node index.js --validate <cpf ou cep> --code <número do cep ou do cpf>
 ```
 
 Exemplo:
 
 ```bash
-node index.js --validade cep --code 123456-789
+node index.js --validate cep --code 123456-789
 ```
 
 Vai retornar:
