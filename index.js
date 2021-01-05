@@ -31,8 +31,8 @@ function ValidateCode(choiceTest, codeTest) {
       }
     } else if (
       choiceTest != null ||
-      (codeTest != null && choise == null) ||
-      numberOfChoice == null
+      codeTest != null && (choise == null ||
+      numberOfChoice == null)
     ) {
       switch (choiceTest) {
         case "cpf":
@@ -53,8 +53,12 @@ function ValidateCode(choiceTest, codeTest) {
           );
           return false;
       }
-    } else {
-      console.log("Por favor coloque as flags corretamente.");
+    } else if (
+      choiceTest == null ||
+      codeTest == null && (choise == null ||
+      numberOfChoice == null)
+    ) {
+      console.log("\x1b[32m", "Por favor coloque as flags corretamente.");
       return false;
     }
   } catch (e) {

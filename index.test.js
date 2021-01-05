@@ -1,5 +1,5 @@
-const { ValidateCode } = require("./index")
+const ValidateCode = require("./index")
 
 test("function 'ValidateCode' returns true", () => {
-  expect(ValidateCode()).toBe(true)
+  expect(ValidateCode("cep", "123456-789")).toBe(true)
 })
